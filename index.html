@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HOMEPAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Montserrat', sans-serif;
+			color: #df3333;
+			background-image: url(bg.png);
+       		}
+
+		header {
+			background-color: #8d8686;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+            padding-top: 50px;
+		}
+
+		h1 {
+			font-size: 2em;
+			margin: 0;
+		}
+
+        nav {
+            background-color: rgba(68, 68, 68, 0.8);
+			color: #fff;
+			padding: 10px;
+            text-align:center;
+            flex-direction: column;
+            align-items: center;
+            }
+
+        nav a {
+            display: block; 
+            text-decoration: none;
+            color: #ffffff;
+            margin: 5px 10px;
+            }
+        .dark-grey {
+            background-color: rgba(55, 50, 50, 0.8); /* Темно-сірий фон для класу dark-grey */
+            background-size: cover;
+            }
+
+        .light-grey {
+            background-color: rgba(95, 92, 92, 0.8); /* Світло-сірий фон для класу light-grey */
+            background-size: cover;
+            }
+
+		main {
+			margin: 20px;
+			padding: 10px;
+			background-color: #4e4646c4;
+			border: 1px solid #ddd;
+            color: #ffffff;
+            font-weight: bold;
+         	}
+
+		section {
+			margin-bottom: 20px;
+		}
+
+		h2 {
+            font-weight: bold;
+			font-size: 1.5em;
+			margin-top: 0;
+		}
+
+		p {
+			margin: 0;
+			line-height: 1.5;
+            color: #e0d1d1;
+           
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			margin: 10px 0;
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		th, td {
+			border: 1px solid #ddd;
+			padding: 5px;
+			text-align: justify;
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+		}
+
+		footer {
+			background-color: #444;
+			color: #3d2f2f;
+			padding: 10px;
+			text-align: center;
+		}
+
+        #scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#scrollToTop.show {
+    opacity: 1;
+}
+
+
+		@media screen and (min-width: 768px) {
+			header, nav, main, footer {
+				max-width: 960px;
+				margin: 0 auto;
+			}
+		}
+	</style>
+    <script>
+        window.onscroll = function() {
+    toggleScrollToTop();
+};
+
+function toggleScrollToTop() {
+    var scrollToTopElement = document.getElementById('scrollToTop');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopElement.classList.add('show');
+    } else {
+        scrollToTopElement.classList.remove('show');
+    }
+}
+
+function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+    </script>
+</head>
+<body>
+	<header>
+        <div style="float: left; margin-top: -50px;">
+            <img style="width: 80px; height: 80px;" src="ava.jpg" alt="">
+          </div>
+          
+		<h1 >Моя сторінка</h1>
+	</header>
+	<nav>
+		
+		<a class="dark-grey" href="#ab">1 Про себе</a>
+		<a class="light-grey" href="#ex">2 Досвід</a>
+		<a class="dark-grey" href="#sk">3 Навички</a>
+		<a class="light-grey" href="#hob">4 Хобі</a>
+		<a class="dark-grey" href="#cn">5 Контакти</a>
+		
+	</nav>
+	<main>
+		<section id="ab">
+			<h2>Про себе</h2>
+            <img style="float: left; margin-right: 20px; width: 400px; height: 400px; border-radius: 50%;" src="IMG_20200802_113222_652.jpg" alt="">
+			<p style="margin-left: 440px; text-align: justify;">Я є досвідченим веб-розробником, який має понад 5 років досвіду у створенні та підтримці веб-додатків та сайтів.<br> 
+                Мій досвід включає роботу з різними мовами програмування, такими як HTML, CSS, JavaScript, PHP та Python, <br>
+                а також з різними фреймворками та інструментами, такими як React, Angular, Node.js, Django та WordPress. <br>
+                Я маю відмінні комунікативні навички і готовa працювати в команді, щоб досягти спільної мети. Я маю досвід роботи з клієнтами та знаю, <br>
+                як слухати та розуміти їхні потреби, а також надавати рішення, які відповідають їхнім бізнес-цілям.<br>
+                Я завжди прагну до самовдосконалення та навчання нових технологій, щоб поліпшити свої навички та здібності в галузі веб-розробки. <br>
+                Я орієнтованa на результат і готовa надавати якісний код, який відповідає стандартам якості та безпеки. <br>
+                Якщо ви шукаєте висококваліфікованого веб-розробника, готового до нових викликів та завдань, я готовa надати свій досвід та навички в цій галузі.</p>
+		</section>
+		<section id="ex">
+            <h2>Досвід</h2>
+		<p>Досвід 2021-2023:<br>
+            Компанія: WebDev<br>
+            Посада: Фронтенд-розробник <br>
+            У період з 2021 по 2023 рік я працювала у компанії WebDev. Мої обов'язки включали розробку і підтримку веб-сайтів, використовуючи HTML, CSS та JavaScript. <br>
+            Я також займалася оптимізацією веб-сторінок для підвищення швидкості завантаження і покращення SEO. <br>
+            У рамках своєї роботи я брала участь у розробці кросс-браузерних і мобільних сайтів. Крім того, я займалася створенням адаптивних дизайнів для мобільних пристроїв.<br>
+            <br>
+            Досвід 2018-2021: <br>
+            Компанія: ABC веб-студія <br>
+            Посада: Фронтенд-розробник <br>
+            З 2018 по 2021 рік я працювала у веб-студії ABC. Мої обов'язки включали розробку та підтримку веб-сайтів для клієнтів. <br>
+            Для цього я використовувала HTML, CSS, JavaScript, а також фреймворки, такі як React і Bootstrap. <br>
+            <br>
+            Досвід 2016-2018: <br>
+            Компанія: XYZ IT компанія <br>
+            Посада: Фронтенд-розробник <br>
+            У період з 2016 по 2018 рік я працювала у компанії XYZ, де була відповідальним за розробку і підтримку веб-додатків для клієнтів. <br>
+            У своїй роботі я використовувала HTML, CSS, JavaScript, а також фреймворк Angular та інші фреймворки.</p>
+	</section>
+	<section id="sk">
+		<h2>Навички</h2>
+		<p>У моєму арсеналі є різноманітні навички, які я використовую у своїй роботі. <br>
+            По-перше, я маю досвід роботи з Angular - це потужний фреймворк для розробки веб-додатків. <br> 
+            Я володію знаннями і навичками, щоб створювати ефективні та складні додатки, використовуючи цей фреймворк. <br>
+            Також у моєму арсеналі є досвід роботи з графічними редакторами, такими як Figma і Sketch. <br> 
+            Ці інструменти дозволяють мені створювати естетичні та функціональні дизайни для веб-сайтів і веб-додатків. <br> 
+            Я можу розробляти інтерфейси користувача, розташування елементів та взаємодію з додатком. <br>
+            У моєму розпорядженні також є вміння працювати з HTML та CSS, що є основою веб-розробки. <br> 
+            Я можу створювати розмітку сторінок, задавати стилізацію та керувати виглядом елементів. <br> 
+            Знання SQL дозволяють мені взаємодіяти з базами даних, виконувати запити і зберігати інформацію. <br>
+            Крім того, у моєму розпорядженні є досвід роботи з мовами програмування, такими як C#, C++, TypeScript та JavaScript. <br> 
+            Ці мови дозволяють мені розробляти функціональність веб-додатків, виконувати обчислення, створювати скрипти та взаємодіяти з іншими компонентами системи.
+            Загалом, мій набір навичок дозволяє мені ефективно працювати над розробкою веб-сайтів та веб-додатків. <br> 
+            Я можу поєднувати розробку функціональності з естетичним дизайном і забезпечувати взаємодію з базами даних.
+        </p>
+	</section>
+	<section id="hob">
+		<h2>Мої хобі</h2>
+        	<p>За моїми професійними здібностями в розробці веб-сайтів і навичками, пов'язаними з програмуванням і дизайном, 
+                я також маю декілька хобі, які мені дуже надзвичайно подобаються. <br>
+                Одним з моїх хобі є малювання картин. Я завжди відчуваю неймовірну творчу свободу, коли беру пензель або олівець у руки. <br>
+                Малювання дозволяє мені виразити свої почуття та передати світ так, як його бачу. Чи то реалістичний портрет, абстрактна композиція або пейзаж, <br> 
+                я завжди насолоджуюся процесом творення власних шедеврів. <br>
+                Ще одне моє хобі - їзда на роликах. Це спортивне заняття, яке не тільки додає активності моєму життю, а й робить мене сильнішою та здоровішою. <br> 
+                Я люблю відчувати вітер у волоссі, крутитися на роликах і досліджувати нові місця. Це також чудовий спосіб розважитися і розслабитися після напруженого дня роботи. <br> 
+                Кожен раз, коли я вирушаю на прогулянку на роликах, я відчуваю себе вільною і повною енергії. <br>
+                У своєму вільному часі я насолоджуюся цими хобі і багато чого вчуся. Малювання надає мені можливість розкрити свою творчість та розвивати художні навички, а їзда на роликах покращує мою фізичну форму і допомагає зняти стрес. 
+                Ці хобі доповнюють моє професійне життя, допомагають мені зберігати баланс і надихають на нові ідеї і досягнення.</p>
+    </section>
+    <section id="cn">
+        <h2>Контакти</h2>
+                <table>
+			<tbody>
+				<tr>
+					<td>Telegram</td>
+					<td><a style="text-decoration: none; color: #fff;" href="https://t.me/xaxaxaxxaxaxxxxx">xaxaxaxxaxaxxxxx</a></td>
+                    
+				</tr>
+                <tr>
+                    <td>Gmail</td>
+					<td><a style="text-decoration: none; color: #fff;" href="mailto:22.nastia.22.enotik22@gmail.com">22.nastia.22.enotik22@gmail.com</a> </td>
+                </tr>
+                <tr>
+                    <td>Номер телефону</td>
+                    <td> <a style="text-decoration: none; color: #fff;" href="tel:+380997096811">Анастасія Ізотова</a> </td>
+                </tr>
+                <tr>
+                    <td>Skype</td>
+                    <td> <a style="text-decoration: none; color: #fff;" href="callto:Nastia">Nastya</a> </td>
+                </tr>
+            </tbody>
+        </section>
+    </main>
+    <a id="scrollToTop" href="#" onclick="scrollToTop(); return false;">
+        <img src="upload.png" alt="Scroll To Top" />
+    </a>
+    
+</body>
+</html>
